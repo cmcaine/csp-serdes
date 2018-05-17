@@ -4,9 +4,10 @@
   "description": "Content-Security-Policy Serializer and Deserializer (Parser)",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "main": "dist/commonjs/index.js",
   "scripts": {
     "test": "cp dist/index.js dist/index.mjs && node --experimental-modules tests.mjs && rm dist/index.mjs",
-    "build": "tsc --declaration"
+    "build": "tsc --declaration && tsc --module commonjs --outDir dist/commonjs"
   },
   "repository": {
     "type": "git",
