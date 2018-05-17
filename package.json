@@ -1,0 +1,30 @@
+{
+  "name": "csp-serdes",
+  "version": "1.0.0",
+  "description": "Content-Security-Policy Serializer and Deserializer (Parser)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "cp dist/index.js dist/index.mjs && node --experimental-modules tests.mjs && rm dist/index.mjs",
+    "build": "tsc --declaration"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmcaine/csp-serdes.git"
+  },
+  "keywords": [
+    "csp",
+    "parser",
+    "parsing",
+    "content-security-policy"
+  ],
+  "author": "Colin Caine <cmcaine@gmail.com>",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/cmcaine/csp-serdes/issues"
+  },
+  "homepage": "https://github.com/cmcaine/csp-serdes#readme",
+  "devDependencies": {
+    "typescript": "^2.8.3"
+  }
+}

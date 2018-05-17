@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "outDir": "dist",
+    "sourceMap": true,
+    "target": "ES2017",
+    "lib": ["ES2017"],
+    "alwaysStrict": true
+  },
+  "include": [
+    "./index.ts"
+  ]
+}
