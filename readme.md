@@ -14,8 +14,11 @@ policy.get('default-src') instanceof Set // true
 policy.delete('sandbox')
 
 // modify directives
-policy.get('script-src').add('unsafe-eval')
+policy.get('script-src').add("'unsafe-eval'")
 
 // replace directives
-policy.set('script-src', new Set(['self', 'unsafe-eval'])
+policy.set('script-src', new Set(["'self'", "'unsafe-eval'"]))
+
+// serialize back to a string
+csp.serialize(policy) // "default-src 'none'; script-src 'self' 'unsafe-eval'; connect-src https: 'self'; img-src 'self'; style-src 'self'"
 ```
