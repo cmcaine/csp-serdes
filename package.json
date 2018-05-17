@@ -1,6 +1,6 @@
 {
   "name": "csp-serdes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Content-Security-Policy Serializer and Deserializer (Parser)",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
